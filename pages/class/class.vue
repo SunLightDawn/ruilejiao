@@ -213,14 +213,22 @@
 			};
 		},
 		onShow() {
-			this.getClassData0();
-			this.getClassData1();
-			this.getClassData2();
-			this.getClassData3();
-			this.options();
+			if (this.tabListIdx == 1) {
+				this.getClassData1();
+			} else if (this.tabListIdx == 0) {
+				this.getClassData0();
+			} else if (this.tabListIdx == 2) {
+				this.getClassData2();
+			} else if (this.tabListIdx == 3) {
+				this.getClassData3();
+			}
 		},
 		onLoad() {
-
+			this.options();
+			this.getClassData1();
+			this.getClassData0();
+			this.getClassData2();
+			this.getClassData3();
 		},
 		methods: {
 			// 获取筛选选项

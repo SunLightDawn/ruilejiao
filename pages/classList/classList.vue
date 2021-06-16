@@ -48,17 +48,17 @@
 								<div class="circle-item">
 									<div class="circle-left-wrap">
 										<div class="left"
-											:style="{'transform': 'rotate('+((classTopInfo.expend_class_hour_perlesson?parseInt(classTopInfo.expend_class_hour_perlesson / classTopInfo.total_lesson_number * 100):0)>=50?(360*(((classTopInfo.expend_class_hour_perlesson?parseInt(classTopInfo.expend_class_hour_perlesson / classTopInfo.total_lesson_number * 100):0)-50)/100)):0)+'deg)'}">
+											:style="{'transform': 'rotate('+((classTopInfo.expend_class_hour_perlesson?parseInt((classTopInfo.total_lesson_number - classTopInfo.expend_class_hour_perlesson) / classTopInfo.total_lesson_number * 100):0)>=50?(360*(((classTopInfo.expend_class_hour_perlesson?parseInt((classTopInfo.total_lesson_number - classTopInfo.expend_class_hour_perlesson) / classTopInfo.total_lesson_number * 100):0)-50)/100)):0)+'deg)'}">
 										</div>
 									</div>
 									<div class="circle-right-wrap">
 										<div class="right"
-											:style="{'transform': 'rotate('+((classTopInfo.expend_class_hour_perlesson?parseInt(classTopInfo.expend_class_hour_perlesson / classTopInfo.total_lesson_number * 100):0)>=50?180:(360*((classTopInfo.expend_class_hour_perlesson?parseInt(classTopInfo.expend_class_hour_perlesson / classTopInfo.total_lesson_number * 100):0)/100)))+'deg)'}">
+											:style="{'transform': 'rotate('+((classTopInfo.expend_class_hour_perlesson?parseInt((classTopInfo.total_lesson_number - classTopInfo.expend_class_hour_perlesson) / classTopInfo.total_lesson_number * 100):0)>=50?180:(360*((classTopInfo.expend_class_hour_perlesson?parseInt((classTopInfo.total_lesson_number - classTopInfo.expend_class_hour_perlesson) / classTopInfo.total_lesson_number * 100):0)/100)))+'deg)'}">
 										</div>
 									</div>
 									<div class='mask'></div>
 									<div class="jinduInfo flex">
-										{{classTopInfo.expend_class_hour_perlesson}}/{{classTopInfo.total_lesson_number}}
+										{{classTopInfo.total_lesson_number - classTopInfo.expend_class_hour_perlesson}}/{{classTopInfo.total_lesson_number}}
 									</div>
 								</div>
 							</div>
@@ -109,7 +109,7 @@
 								</div>
 							</div>
 							<div>
-								平时出勤率:{{classTopInfo.student_attence?parseInt(classTopInfo.student_attence / classTopInfo.student_total * 100):0}}%
+								平均出勤率:{{classTopInfo.student_attence?parseInt(classTopInfo.student_attence / classTopInfo.student_total * 100):0}}%
 							</div>
 						</div>
 					</div>
