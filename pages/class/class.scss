@@ -1,0 +1,361 @@
+.topEle{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+.classTabEle {
+	width: 100%;
+	height: 112rpx;
+	background-image: linear-gradient(to bottom, #83b8cd, #cee2ea);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	>p {
+		width: 0;
+		height: 0;
+		border-left: 20rpx solid transparent;
+		border-right: 20rpx solid transparent;
+		border-bottom: 20rpx solid #ffffff;
+		position: absolute;
+		left: calc(100% - 50% - (25% / 2) - 20rpx);
+		bottom: 0;
+		transition: 0.3s;
+	}
+
+	>div {
+		width: calc(100% / 4);
+		text-align: center;
+		color: #333333;
+		font-size: $uni-font-size-24;
+		transition: 0.3s;
+	}
+
+	.sel {
+		color: #000000;
+		font-size: $uni-font-size-28;
+		font-weight: 600;
+	}
+}
+
+.numStatistics {
+	width: 100%;
+	height: 94rpx;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 32rpx;
+	box-sizing: border-box;
+
+	>div {
+		color: #999999;
+		font-size: $uni-font-size-24;
+
+		image {
+			width: 32rpx;
+			height: 32rpx;
+			margin-left: 20rpx;
+		}
+	}
+}
+
+.classListEle {
+	width: 100%;
+	padding: 30rpx 30rpx 0 30rpx;
+	box-sizing: border-box;
+
+	.classList {
+		width: 100%;
+		background-color: #ffffff;
+		border-radius: 8rpx;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+		margin-bottom: 20rpx;
+
+		.classListT {
+			font-weight: 600;
+			color: #000000;
+			font-size: $uni-font-size-36;
+			display: flex;
+			align-items: center;
+			padding: 26rpx 20rpx 20rpx 20rpx;
+			box-sizing: border-box;
+			border-bottom: 2rpx solid #f4f4f4;
+
+			image {
+				width: 32rpx;
+				height: 32rpx;
+				margin-right: 20rpx;
+			}
+		}
+
+		.classListB {
+			width: 100%;
+			padding: 20rpx 20rpx 20rpx 12rpx;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+
+			.classListBL {
+				width: 400rpx;
+				display: flex;
+				align-items: center;
+
+				>image {
+					width: 98rpx;
+					height: 98rpx;
+					margin-right: 16rpx;
+				}
+
+				>div {
+
+					p:nth-child(1),
+					p:nth-child(2) {
+						color: #999999;
+						font-size: $uni-font-size-26;
+					}
+
+					p:nth-child(2) {
+						margin: 6rpx 0;
+					}
+
+					p {
+						display: flex;
+						flex-wrap: wrap;
+
+						span {
+							border: 2rpx solid #e9bd29;
+							border-radius: 4rpx;
+							font-size: 20rpx;
+							color: #e9bd29;
+							padding: 0 4rpx;
+							box-sizing: border-box;
+							margin-right: 10rpx;
+							margin-bottom: 10rpx;
+							margin-top: 6rpx;
+						}
+					}
+
+					.cheng {
+						span {
+							border: 2rpx solid #e9bd29;
+							color: #e9bd29;
+						}
+					}
+
+					.zi {
+						span {
+							border: 2rpx solid #c561ee;
+							color: #c561ee;
+						}
+					}
+
+					.lan {
+						span {
+							border: 2rpx solid #3ed5df;
+							color: #3ed5df;
+						}
+					}
+				}
+			}
+
+			.classListBC {
+				.jinduBar {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					font-size: $uni-font-size-20;
+				}
+			}
+		}
+	}
+	.classList:last-child{
+		margin: 0;
+	}
+}
+
+.indexListNo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100rpx;
+
+	image {
+		width: 160rpx;
+	}
+
+	p {
+		color: #999999;
+		font-size: $uni-font-size-24;
+		margin-top: 15rpx;
+	}
+}
+
+.screenEle {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 30;
+	opacity: 0;
+	transform: translateX(100vw);
+	transition: 0.3s;
+
+	.screenEleBg {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 0;
+	}
+
+	.screenSel {
+		width: 600rpx;
+		height: 100%;	
+		background-color: #FFFFFF;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1;
+
+		.screenAudio {
+			padding: 50rpx 30rpx;
+			box-sizing: border-box;
+			border-bottom: 2rpx solid #f4f4f4;
+
+			>p {
+				color: #999999;
+				font-size: $uni-font-size-28;
+			}
+
+			>div {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+
+				>div {
+					width: 166rpx;
+					height: 62rpx;
+					box-sizing: border-box;
+					border: 2rpx solid #cccccc;
+					color: #666666;
+					font-size: $uni-font-size-24;
+					border-radius: 8rpx;
+					margin-top: 20rpx;
+				}
+
+				>div:nth-child(3n + 2) {
+					margin: 20rpx 20rpx 0 20rpx;
+				}
+
+				.sel {
+					border: 2rpx solid #9dc0ce;
+					color: #9dc0ce;
+					background-image: url(../../static/img/icon_selected.png);
+					background-repeat: no-repeat;
+					background-position: right bottom;
+					background-size: 40rpx 40rpx;
+				}
+			}
+		}
+
+		.screenSelDate {
+			padding: 50rpx 30rpx 20rpx 30rpx;
+			box-sizing: border-box;
+
+			>p {
+				color: #999999;
+				font-size: $uni-font-size-28;
+			}
+
+			>div {
+				display: flex;
+				align-items: center;
+				margin: 20rpx 0 20rpx;
+
+				>p {
+					margin: 0 20rpx;
+				}
+
+				>div {
+					width: 162rpx;
+					height: 62rpx;
+					background-color: #f4f4f4;
+					border-radius: 8px;
+					color: #666666;
+					font-size: $uni-font-size-24;
+				}
+			}
+		}
+
+		.rememberPasd {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			margin: 20rpx 0;
+			padding-left: 30rpx;
+			padding-bottom: 150rpx;
+			box-sizing: border-box;
+
+			>div {
+				width: 40rpx;
+				height: 40rpx;
+				margin-right: 10rpx;
+
+				image {
+					width: 40rpx;
+					height: 40rpx;
+				}
+			}
+
+			p {
+				font-size: $uni-font-size-24;
+				color: #000000;
+			}
+		}
+
+		.screenSelBtn {
+			width: 600rpx;
+			height: 96rpx;
+			display: flex;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			z-index: 31;
+
+			div {
+				width: 50%;
+				height: 100%;
+				font-size: $uni-font-size-36;
+			}
+
+			>div:nth-child(1) {
+				border-top: 2rpx solid #cccccc;
+				box-sizing: border-box;
+				background-color: #ffffff;
+				color: #999999;
+			}
+
+			>div:nth-child(2) {
+				background-color: #6da6bd;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.screenEleLeft {
+	opacity: 1;
+	transform: translateX(0vw);
+}

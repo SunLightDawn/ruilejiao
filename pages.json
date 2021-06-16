@@ -1,0 +1,183 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"backgroundColor": "#83b8cd",
+				// "enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/class/class",
+			"style": {
+				"navigationBarTitleText": "班级",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				// "enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "班级",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/classList/classList",
+			"style": {
+				"navigationBarTitleText": "班级",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#bde1f0",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "加载中...",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/birthdayStudentList/birthdayStudentList",
+			"style": {
+				"navigationBarTitleText": "生日学员",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/attendanceRecord/attendanceRecord",
+			"style": {
+				"navigationBarTitleText": "考勤记录",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "视频播放",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/workBaogaoDetail/workBaogaoDetail",
+			"style": {
+				"navigationBarTitleText": "作业报告",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/wechatnotice/wechatnotice",
+			"style": {
+				"navigationBarTitleText": "微信通知提醒",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/changePassword/changePassword",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/loginview/loginview",
+			"style": {
+				"navigationBarTitleText": "登录中...",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#83b8cd",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"borderStyle": "black",
+		"fontSize": "22px",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/icon_homepage_unselected.png",
+				"selectedIconPath": "static/img/icon_homepage_selected.png"
+			},
+			{
+				"pagePath": "pages/class/class",
+				"text": "班级",
+				"iconPath": "static/img/icon_class_unselected.png",
+				"selectedIconPath": "static/img/icon_class_selected.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/img/icon_mine_unselected.png",
+				"selectedIconPath": "./static/img/icon_mine_selected.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

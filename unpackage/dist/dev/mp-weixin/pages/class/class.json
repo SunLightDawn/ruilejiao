@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "班级",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#83b8cd",
+  "usingComponents": {
+    "jp-time-picker": "/components/jp-timePicker/jp-timePicker"
+  }
+}

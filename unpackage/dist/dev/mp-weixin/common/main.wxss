@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+view,
+._p {
+	font-family: PingFang SC;
+}
+image {
+	display: block;
+}
+.contentPage {
+	width: 100%;
+}
+

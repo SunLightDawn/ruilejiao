@@ -1,0 +1,1 @@
+<view class="contentPage"><video id="myVideo" src="{{videoUrl}}" direction="{{90}}" autoplay="{{true}}" show-fullscreen-btn="{{true}}" enable-danmu="{{true}}" danmu-btn="{{false}}" controls="{{true}}"></video></view>

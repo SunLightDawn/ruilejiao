@@ -1,0 +1,352 @@
+.myInfoEle {
+		width: 100%;
+		height: 634rpx;
+		position: relative;
+		overflow: hidden;
+
+		.myInfoEleBgO {
+			width: 100%;
+			height: 634rpx;
+			background-image:linear-gradient(22.74deg,#bde1f0 0%,#91bdcf 100%);
+			border-radius: 0 0 1000% 200%;
+			position: absolute;
+			right: -28rpx;
+			// top: -50rpx;
+			transform: rotateY(180deg);
+			z-index: 0;
+		}
+
+		.myInfoEleBgT {
+			width: 100%;
+			height: 634rpx;
+			background-image: linear-gradient(304.43deg, #bde1f0 0%, #91bdcf 100%);
+			box-shadow:0px 0px 20px rgba(157, 192, 206, 0.4);
+			border-radius: 0 0 1000% 200%;
+			position: absolute;
+			left: -28rpx;
+			// top: -50rpx;
+			z-index: 0;
+		}
+
+		.myInfoEleBgD {
+			width: 160rpx;
+			height: 90rpx;
+			position: absolute;
+			left: 34rpx;
+			top: 190rpx;
+			display: flex;
+			flex-wrap: wrap;
+
+			span {
+				display: inline-block;
+				height: 10rpx;
+				width: 10rpx;
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, 0.4);
+				margin: 0 10rpx 10rpx 0;
+			}
+		}
+	}
+
+	.myInfoBox {
+		width: 100%;
+		margin-top: -444rpx;
+		position: relative;
+	}
+
+	.myInfo {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 6rpx 0 0 50rpx;
+		box-sizing: border-box;
+	}
+
+	.myInfoTx {
+		width: 142rpx;
+		height: 160rpx;
+		overflow: hidden;
+		transform: rotate(120deg);
+		border-radius: 50rpx;
+
+		.list_child {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			transform: rotate(-60deg);
+			border-radius: 50rpx;
+		}
+
+		.list_child_child {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			transform: rotate(-60deg);
+			background-color: #ffffff;
+			border-radius: 50rpx;
+
+			.myInfoTxL {
+				width: 126rpx;
+				height: 150rpx;
+				overflow: hidden;
+				transform: rotate(120deg);
+				border-radius: 50rpx;
+
+				.list_childL {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					transform: rotate(-60deg);
+					border-radius: 50rpx;
+				}
+
+				.list_child_childL {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					transform: rotate(-60deg);
+					background-image: url(../../static/img/icon_boy.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center center;
+					border-radius: 50rpx;
+				}
+			}
+		}
+	}
+
+	.myInfoName {
+		font-weight: 800;
+		color: #000000;
+		font-size: $uni-font-size-36;
+		margin-left: 28rpx;
+	}
+
+	.myInfoDate {
+		width: 100%;
+		display: flex;
+		margin-top: 15rpx;
+
+		>div {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			>p:nth-child(1) {
+				color: #000000;
+				font-size: 52rpx;
+				font-weight: 600;
+			}
+
+			>p:nth-child(2) {
+				color: #000000;
+				font-size: $uni-font-size-24;
+			}
+		}
+	}
+
+	.myWorkDate {
+		padding: 14rpx 32rpx;
+		box-sizing: border-box;
+
+		>p {
+			width: 100%;
+			color: #ffffff;
+			font-size: $uni-font-size-20;
+			display: flex;
+			align-items: center;
+			margin-bottom: 18rpx;
+
+			image {
+				width: 24rpx;
+				height: 24rpx;
+				margin-right: 10rpx;
+				margin-left: 10rpx;
+			}
+		}
+
+		>div {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			>div {
+				width: 332rpx;
+				height: 192rpx;
+				background-color: #ffffff;
+				border-radius: 22rpx;
+				box-shadow:0px 4px 16px rgba(157, 192, 206, 0.45);
+				margin-bottom: 20rpx;
+				padding: 34rpx 28rpx;
+				box-sizing: border-box;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				>div:nth-child(1) {
+					image {
+						width: 64rpx;
+						height: 64rpx;
+					}
+
+					p:nth-child(2) {
+						color: #999999;
+						font-size: $uni-font-size-20;
+						margin: 10rpx 0 12rpx;
+					}
+
+					p:nth-child(3) {
+						font-weight: 900;
+						color: #333333;
+						font-size: $uni-font-size-32;
+					}
+				}
+
+				>div:nth-child(2) {
+					width: 50px;
+					// width: 90rpx;
+					position: relative;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+
+					.jinduLineEle {
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 2;
+						
+						.jinduLine {
+							width: 50px;
+							height: 50px;
+							position: relative;
+						
+							>div {
+								width: 4px;
+								height: 50px;
+								background-color: #ffffff;
+								position: absolute;
+								left: 50%;
+								margin-left: -2px;
+								top: 0;
+							}
+						
+							>p {
+								width: 30px;
+								height: 30px;
+								background-color: #eeeeee;
+								border-radius: 50%;
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								margin-top: -15px;
+								margin-left: -15px;
+								border: 2px solid #FFFFFF;
+								box-sizing: border-box;
+							}
+						}
+
+						// .jinduLine {
+						// 	width: 92rpx;
+						// 	height: 92rpx;
+						// 	position: relative;
+
+						// 	>div {
+						// 		width: 8rpx;
+						// 		height: 92rpx;
+						// 		background-color: #ffffff;
+						// 		position: absolute;
+						// 		left: 50%;
+						// 		margin-left: -4rpx;
+						// 		top: 0;
+						// 	}
+
+						// 	>p {
+						// 		width: 68rpx;
+						// 		height: 68rpx;
+						// 		background-color: #eeeeee;
+						// 		border-radius: 50%;
+						// 		position: absolute;
+						// 		left: 50%;
+						// 		top: 50%;
+						// 		margin-top: -34rpx;
+						// 		margin-left: -34rpx;
+						// 		border: 8rpx solid #FFFFFF;
+						// 		box-sizing: border-box;
+						// 	}
+						// }
+					}
+
+					.jinduLineValue {
+						color: #999999;
+						font-size: $uni-font-size-20;
+						margin-top: 10rpx;
+					}
+				}
+			}
+		}
+	}
+
+	.myFuncList {
+		width: 100%;
+		padding-left: 33rpx;
+		box-sizing: border-box;
+		padding-bottom: 30rpx;
+
+		>div {
+			width: 100%;
+			border-bottom: 2rpx solid #f4f4f4;
+			padding: 30rpx 46rpx 30rpx 0;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			>div:nth-child(1) {
+				display: flex;
+				align-items: center;
+				color: #000000;
+				font-size: $uni-font-size-32;
+
+				image {
+					width: 42rpx;
+					height: 47rpx;
+					margin-right: 24rpx;
+				}
+			}
+
+			>div:nth-child(2) {
+				display: flex;
+				align-items: center;
+
+				>div {
+					display: flex;
+					align-items: center;
+					color: #999999;
+					font-size: $uni-font-size-28;
+					
+					p{
+						width: 150rpx;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+					image {
+						width: 48rpx;
+						height: 48rpx;
+						margin-right: 10rpx;
+						border-radius: 50%;
+					}
+				}
+
+				>image {
+					width: 28rpx;
+					height: 28rpx;
+					margin-left: 10rpx;
+				}
+			}
+		}
+	}

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/class/class",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/classList/classList",
+    "pages/webview/webview",
+    "pages/birthdayStudentList/birthdayStudentList",
+    "pages/attendanceRecord/attendanceRecord",
+    "pages/video/video",
+    "pages/workBaogaoDetail/workBaogaoDetail",
+    "pages/wechatnotice/wechatnotice",
+    "pages/changePassword/changePassword",
+    "pages/loginview/loginview"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "fontSize": "22px",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/icon_homepage_unselected.png",
+        "selectedIconPath": "static/img/icon_homepage_selected.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "班级",
+        "iconPath": "static/img/icon_class_unselected.png",
+        "selectedIconPath": "static/img/icon_class_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/img/icon_mine_unselected.png",
+        "selectedIconPath": "./static/img/icon_mine_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

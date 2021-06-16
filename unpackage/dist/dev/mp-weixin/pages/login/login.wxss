@@ -1,0 +1,302 @@
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.flexC {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.loadingmove {
+  height: 160rpx;
+  font-size: 28rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #666666 !important;
+  padding: 0 !important;
+  display: none;
+}
+.loadingmove .liadingimg {
+  width: 40rpx;
+  margin-left: 10rpx;
+  -webkit-animation: jianguo 0.8s linear infinite;
+          animation: jianguo 0.8s linear infinite;
+}
+.noDataEle {
+  width: 100%;
+  height: 90rpx;
+  color: #999999;
+  font-size: 24rpx;
+}
+.circle-container {
+  position: relative;
+  float: left;
+  width: 42px;
+  height: 42px;
+}
+.circle-item {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #9dc0ce;
+}
+.circle-left-wrap,
+.circle-right-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 42px;
+  overflow: hidden;
+}
+.circle-right-wrap {
+  left: 21px;
+}
+.left,
+.right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #e4e4e4;
+}
+.left {
+  clip: rect(0, 21px, auto, 0);
+}
+.right {
+  clip: rect(0, auto, auto, 21px);
+  left: -21px;
+}
+.mask {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.jinduInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  color: #000000;
+  font-size: 20rpx;
+}
+.contentPage {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background-image: -webkit-linear-gradient(top, #d1effb 0%, #9dc0ce 100%);
+  background-image: linear-gradient(180deg, #d1effb 0%, #9dc0ce 100%);
+  position: relative;
+}
+.loginBgL {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.loginBgL > ._div:nth-child(1) {
+  width: 204rpx;
+  height: 600rpx;
+  background-image: -webkit-linear-gradient(left, #ffffff, #9dc0ce);
+  background-image: linear-gradient(to right, #ffffff, #9dc0ce);
+  opacity: 0.25;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  position: absolute;
+  right: 0rpx;
+  top: -296rpx;
+}
+.loginBgL > ._div:nth-child(2) {
+  width: 200%;
+  height: 471rpx;
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #9dc0ce);
+  background-image: linear-gradient(0deg, #ffffff, #9dc0ce);
+  opacity: 0.3;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  position: absolute;
+  right: -260rpx;
+  top: -219rpx;
+}
+.loginBgL > ._div:nth-child(3) {
+  width: 200%;
+  height: 621rpx;
+  background-image: -webkit-linear-gradient(top, #9dc0ce 0%, #ffffff 100%);
+  background-image: linear-gradient(180deg, #9dc0ce 0%, #ffffff 100%);
+  opacity: 0.25;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  right: -260rpx;
+  top: -111rpx;
+}
+.loginBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.loginBg > ._div:nth-child(1) {
+  width: 217rpx;
+  height: 600rpx;
+  background-image: -webkit-linear-gradient(left, #ffffff, #9dc0ce);
+  background-image: linear-gradient(to right, #ffffff, #9dc0ce);
+  opacity: 0.4;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  position: absolute;
+  right: 0rpx;
+  top: -333rpx;
+}
+.loginBg > ._div:nth-child(2) {
+  width: 200%;
+  height: 400rpx;
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #9dc0ce);
+  background-image: linear-gradient(0deg, #ffffff, #9dc0ce);
+  opacity: 0.3;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+  position: absolute;
+  right: -260rpx;
+  top: -226rpx;
+}
+.loginBg > ._div:nth-child(3) {
+  width: 200%;
+  height: 621rpx;
+  background-image: -webkit-linear-gradient(top, #9dc0ce 0%, #ffffff 100%);
+  background-image: linear-gradient(180deg, #9dc0ce 0%, #ffffff 100%);
+  opacity: 0.25;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  right: -260rpx;
+  top: -277rpx;
+}
+.loginEle {
+  width: 650rpx;
+  height: 900rpx;
+  background-color: rgba(225, 225, 225, 0.4);
+  border-radius: 8rpx;
+  box-shadow: 0px 0px 22px rgba(28, 52, 91, 0.23);
+  z-index: 1;
+}
+.loginLogo {
+  width: 100%;
+  padding-top: 50rpx;
+}
+.loginLogo image:nth-child(1) {
+  width: 135rpx;
+  height: 146rpx;
+}
+.loginLogo ._p {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1c345b;
+  letter-spacing: 15rpx;
+  line-height: 50rpx;
+  text-align: center;
+  padding-left: 15rpx;
+  margin-top: 5rpx;
+}
+.loginLogo image:nth-child(3) {
+  width: 140rpx;
+}
+.loginIpt {
+  width: 100%;
+  padding-top: 110rpx;
+}
+.loginIpt .loginAccount {
+  width: 510rpx;
+  height: 80rpx;
+  background-color: #fafafa;
+  border-radius: 8rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.loginIpt .loginAccount image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 26rpx 0 30rpx;
+}
+.loginIpt .loginAccount input {
+  font-size: 24rpx;
+  color: #000000;
+}
+.loginIpt .loginAccount:nth-child(1) {
+  margin-bottom: 70rpx;
+}
+.loginIpt .rememberPasd {
+  width: 510rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 18rpx;
+  box-sizing: border-box;
+}
+.loginIpt .rememberPasd > ._div {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+}
+.loginIpt .rememberPasd > ._div image {
+  width: 34rpx;
+  height: 34rpx;
+}
+.loginIpt .rememberPasd ._p {
+  font-size: 24rpx;
+  color: #6da6bd;
+}
+.loginIpt .loginBtn {
+  width: 510rpx;
+  height: 80rpx;
+  background-color: #6da6bd;
+  border-radius: 8rpx;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+}
+

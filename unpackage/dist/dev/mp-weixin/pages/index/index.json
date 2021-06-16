@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#83b8cd",
+  "backgroundColor": "#83b8cd",
+  "usingComponents": {
+    "ren-calendar": "/components/ren-calendar/ren-calendar"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登录中...",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#83b8cd",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

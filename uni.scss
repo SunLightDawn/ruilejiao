@@ -1,0 +1,187 @@
+// fontsize
+$uni-font-size-36:36rpx;
+$uni-font-size-32:32rpx;
+$uni-font-size-28:28rpx;
+$uni-font-size-26:26rpx;
+$uni-font-size-24:24rpx;
+$uni-font-size-22:22rpx;
+$uni-font-size-20:20rpx;
+
+// 共用样式
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flexC{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+// 加载更多
+.loadingmove {
+	height: 160rpx;
+	font-size: 28rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(102, 102, 102) !important;
+	padding: 0 !important;
+	display: none;
+
+	.liadingimg {
+		width: 40rpx;
+		margin-left: 10rpx;
+		animation: jianguo 0.8s linear infinite;
+	}
+}
+
+// 没有更多提示
+.noDataEle{
+	width: 100%;
+	height: 90rpx;
+	color:#999999;
+	font-size:$uni-font-size-24;
+}
+
+// 圆形进度条
+.circle-container {
+	position: relative;
+	float: left;
+	width: 42px;
+	height: 42px;
+}
+
+.circle-item {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: #9dc0ce;
+}
+
+.circle-left-wrap,
+.circle-right-wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 21px;
+	height: 42px;
+	overflow: hidden;
+}
+
+.circle-right-wrap {
+	left: 21px;
+}
+
+.left,
+.right {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: #e4e4e4;
+}
+
+.left {
+	clip: rect(0, 21px, auto, 0);
+}
+
+.right {
+	clip: rect(0, auto, auto, 21px);
+	left: -21px;
+}
+
+.mask {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.jinduInfo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 42px;
+	height: 42px;
+	color:#000000;
+	font-size:20rpx;
+}
+// .circle-container {
+// 	position: relative;
+// 	float: left;
+// 	width: 84rpx;
+// 	height: 84rpx;
+// }
+
+// .circle-item {
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0px;
+// 	width: 84rpx;
+// 	height: 84rpx;
+// 	border-radius: 50%;
+// 	background-color: #9dc0ce;
+// }
+
+// .circle-left-wrap,
+// .circle-right-wrap {
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	width: 44rpx;
+// 	height: 84rpx;
+// 	overflow: hidden;
+// }
+
+// .circle-right-wrap {
+// 	left: 44rpx;
+// }
+
+// .left,
+// .right {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 86rpx;
+// 	height: 84rpx;
+// 	border-radius: 50%;
+// 	background: #e4e4e4;
+// }
+
+// .left {
+// 	clip: rect(0, 44rpx, auto, 0);
+// }
+
+// .right {
+// 	clip: rect(0, auto, auto, 44rpx);
+// 	left: -44rpx;
+// }
+
+// .mask {
+// 	position: absolute;
+// 	top: 4rpx;
+// 	left: 4rpx;
+// 	width: 78rpx;
+// 	height: 78rpx;
+// 	border-radius: 50%;
+// 	background-color: #fff;
+// }
+// .jinduInfo{
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 84rpx;
+// 	height: 84rpx;
+// 	color:#000000;
+// 	font-size:20rpx;
+// }
